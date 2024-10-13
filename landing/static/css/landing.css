@@ -1,0 +1,73 @@
+/* landing/static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #51678b;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+header, footer {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image {
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('../images/landing.jpeg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.content {
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: larger;
+}
+
+header h1 {
+    font-size: 4.1rem;
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+}
+
+main a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff8c00;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main a:hover {
+    background-color: #b0b300;
+}
+
+footer p {
+    font-size: 1rem;
+    color: rgb(89, 85, 85);
+}

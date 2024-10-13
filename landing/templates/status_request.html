@@ -1,0 +1,32 @@
+<!-- landing/templates/status_request.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Request</title>
+    <link rel="stylesheet" href="{% static 'css/status.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Request Status</h1>
+    </header>
+    <main>
+        <div class="status-container">
+            {% for status in statuses %}
+                <div class="status">
+                    <span class="is-complete"></span>
+                    <p>{{ status }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <br/>
+        <a href="/">Go Back to Home</a>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="{% static 'js/status.js' %}"></script>
+</body>
+</html>

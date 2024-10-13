@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <main>
+        <p>Here are the services we offer.</p>
+        <!-- Add more content about services here -->
+        <a href="{% url 'submit_request' %}" class="button">Submit Request</a>
+        <a href="{% url 'track_request' %}" class="button">Track Request</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

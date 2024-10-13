@@ -1,0 +1,28 @@
+<!-- landing/templates/request_status.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Status</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Request Status</h1>
+    </header>
+    <main>
+        <p><strong>Request ID:</strong> {{ service_request.id }}</p>
+        <p><strong>Service Type:</strong> {{ service_request.get_service_type_display }}</p>
+        <p><strong>Details:</strong> {{ service_request.details }}</p>
+        <p><strong>Status:</strong> {{ service_request.get_status_display }}</p>
+        <p><strong>Submitted At:</strong> {{ service_request.created_at }}</p>
+        <p><strong>Resolved At:</strong> {{ service_request.resolved_at }}</p>
+        <a href="{% url 'services_page' %}">Back to Services</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
